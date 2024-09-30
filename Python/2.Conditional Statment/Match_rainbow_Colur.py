@@ -1,1 +1,0 @@
-char=input("Enter the colur")
