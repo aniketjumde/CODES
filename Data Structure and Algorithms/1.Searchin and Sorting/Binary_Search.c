@@ -48,11 +48,11 @@ int Binary_Search(int a[],int n,int key)
     {
         mid=(lb+ub)/2;
 
-        if(a[key]==a[mid])
+        if(key==a[mid])
         {
             return mid;
         }
-        else if(a[key]>a[mid])
+        else if(key>a[mid])
         {
             lb=mid+1;
         }
@@ -91,7 +91,7 @@ int main()
     }
     else
     {
-        printf("The number %d is found at position [%d]",key,pos+1);
+        printf("The number %d is found at index [%d]",key,pos);
     }
 
     return 0;
