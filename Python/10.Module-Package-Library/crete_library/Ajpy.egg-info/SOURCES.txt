@@ -1,0 +1,7 @@
+setup.py
+Ajpy.egg-info/PKG-INFO
+Ajpy.egg-info/SOURCES.txt
+Ajpy.egg-info/dependency_links.txt
+Ajpy.egg-info/top_level.txt
+mypack/__init__.py
+mypack/sachin.py
