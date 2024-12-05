@@ -1,3 +1,2 @@
-WelCome To my file
-This is the python Folder
-I am practice the code of FileHandling
+Welcome to this directory
+Welcome to Python

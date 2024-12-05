@@ -1,194 +1,154 @@
-#include<stdio.h>
-#include<stdlib.h>
-#define NEWNODE (struct node*) malloc( sizeof(struct node))
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void addBook();
+void displayBooks();
+void searchBook();
+void deleteBook();
 
-struct node
+struct Book 
 {
-	int data;
-	struct node *next;
+    int id;
+    char title[100];
+    char author[100];
+    struct Book* next;
 };
 
-struct node * create(int n)
+struct Book* head = NULL;
+
+void addBook()
 {
-	int i;
-	struct node *f, *l,*t;
+    struct Book* newBook = (struct Book*)malloc(sizeof(struct Book));
 
-	f = NEWNODE;
-	printf("Enter the Data : ");
-	scanf("%d", &f->data);
-	f->next = NULL;
+    printf("Enter Book ID: ");
+    scanf("%d", &newBook->id);
+    getchar();
+    printf("Enter Book Title: ");
+    fgets(newBook->title, sizeof(newBook->title), stdin);
+    newBook->title[strcspn(newBook->title, "\n")] = '\0'; // Remove newline
+    printf("Enter Book Author: ");
+    fgets(newBook->author, sizeof(newBook->author), stdin);
+    newBook->author[strcspn(newBook->author, "\n")] = '\0'; // Remove newline
 
-	l=f;
+    newBook->next = head;
+    head = newBook;
 
-	for(i=2; i<=n; i++)
-	{
-		t = NEWNODE;
-		printf("Enter the Data : ");
-		scanf("%d", &t->data);
-		l->next = t;
-		l = l->next;
-		l->next = NULL;
-	}
-	return f;
+    printf("Book added successfully!\n");
 }
 
-void display(struct node *f)
-{
-	struct node *t;
-
-	for(t=f; t!=NULL; t=t->next)
-	{
-		printf("%d ", t->data);
-	}
-
-	printf("\n");
+void displayBooks()
+ {
+      if (head == NULL)
+      {
+           printf("No books in the library.\n");
+           return;
+       }
+      struct Book* temp = head;
+      printf("\nBooks in the Library:\n");
+      while (temp != NULL) 
+     {
+           printf("ID: %d, Title: %s, Author: %s\n", temp->id, temp->title, temp->author);
+           temp = temp->next;
+       }
 }
 
-struct node* eraseall(struct node *f)
+void searchBook() 
 {
-	struct node *t;
-
-	while(f!=NULL)
-	{
-		t = f;
-		f = f->next;
-		free(t);
-	}
-	return f;  // return NULL;
+    if (head == NULL) 
+   {
+        printf("No books in the library.\n");
+        return;
+    }
+    int id;
+    printf("Enter the Book ID to search: ");
+    scanf("%d", &id);
+    struct Book* temp = head;
+    while (temp != NULL) 
+   {
+        if (temp->id == id) {
+            printf("Book found! ID: %d, Title: %s, Author: %s\n", temp->id, temp->title, temp->author);
+            return;
+        }
+        temp = temp->next;
+    }
+    printf("Book not found.\n");
 }
 
-struct node * add_first(struct node *f)
+void deleteBook()
 {
-	struct node *t;
+    if (head == NULL)   
+   {
+        printf("No books in the library.\n");
+        return;
+   }
+    int id;
+    printf("Enter the Book ID to delete: ");
+    scanf("%d", &id);
+    struct Book* temp = head;
+    struct Book* prev = NULL;
+    if (temp != NULL && temp->id == id)
+    {
+        head = temp->next;
+        free(temp);
+        printf("Book deleted successfully!\n");
+        return;
+    }
 
-	t = NEWNODE;
-	printf("Enter the Data to add first: ");
-	scanf("%d", & t->data);
-	t->next = NULL;
+    while (temp != NULL && temp->id != id)
+    {
+        prev = temp;
+        temp = temp->next;
+     }
 
-
-	t->next = f;
-	f = t;
-
-	return f;
+    if (temp == NULL) 
+   {
+        printf("Book not found.\n");
+        return;
+    }
+    prev->next = temp->next;
+    free(temp);
+    printf("Book deleted successfully!\n");
 }
 
-struct node * del_first(struct node *f)
+int main() 
 {
-	struct node *t;
+    int choice;
+    int flag;
+    while (!flag) 
+    {
+        flag=0;
+        printf("\nLibrary Management System\n");
+        printf("1. Add Book\n");
+        printf("2. Display Books\n");
+        printf("3. Search Book\n");
+        printf("4. Delete Book\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        getchar(); // To consume the newline character
 
-	t= f;
-	f = f->next;
-	free(t);
-	return f;
-}
-
-
-struct node * del_last(struct node *f)
-{
-	struct node *S, *L;
-
-	for(L=f; L->next != NULL; L=L->next)
-	{
-		S=L;
-	}
-
-	free(L);
-	S->next = NULL;
-
-	return f;
-}
-
-struct node * add_last(struct node* f)
-{
-	struct node *t, *L;
-
-	t = NEWNODE;
-	printf("Enter the Data to add last: ");
-	scanf("%d", & t->data);
-	t->next = NULL;
-
-	// Using L to Traverse the List
-
-	for(L=f; L->next != NULL; L=L->next);
-
-
-	L->next = t;
-	return f;
-
-}
-
-int lengthLL(struct node *f)
-{
-	int cnt = 0;
-	struct node *t;
-
-	for(t=f; t!=NULL; t=t->next)
-	{
-		cnt++;
-	}
-
-	return cnt;
-}
-
-int sumLL(struct node *f)
-{
-    int sum=0;
-    struct node *t;
-    
-	for(t=f; t!=NULL; t=t->next)
-	{
-		sum=sum+t->data	}
-    return sum;
-}
-
-int main()
-{
-	struct node *head = NULL;
-	int n;
-	int ans;
-
-
-	printf("How many nodes : ");
-	scanf("%d", &n);
-
-	head = create(n);
-
-	printf("LinkedList : ");
-	display(head);
-
-
-	ans = lengthLL(head);
-	printf("No. of Nodes : %d \n", ans);
-
-	ans = sumLL(head);
-	printf("Sum of Elments : %d \n", ans);
-	
-
-/*
-	head = add_first(head);
-
-	printf("ADD FIRST : ");
-	display(head);
-
-	head = del_first(head);
-
-	printf("DEL FIRST : ");
-	display(head);
-
-	head = add_last(head);
-	printf("ADD LAST : ");
-	display(head);
-
-
-	head = del_last(head);
-
-	printf("DEL LAST : ");
-	display(head);
-*/
-	
-
-
-	head = eraseall(head);
-	return 0;
+        switch (choice) 
+        {
+            case 1:
+                addBook();
+                break;
+            case 2:
+                displayBooks();
+                break;
+            case 3:
+                searchBook();
+                break;
+            case 4:
+                deleteBook();
+                break;
+            case 5:
+                printf("Exiting...\n");
+                flag=1;
+                break;
+            default:
+                printf("Invalid choice! Please try again.\n");
+                break;
+        }
+    } 
+    return 0;
 }
