@@ -1,0 +1,247 @@
+#ppp{
+    border: 2px solid rgb(5, 141, 146);
+    width: 50%;
+    margin: 200px;
+}
+#aaa
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+#bbb{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
+    position:relative;
+    top: 50px;
+    right:50px;
+    z-index: 2;
+    
+}
+#ccc{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+    position:relative;
+    top: 100px;
+    right:100px;
+    z-index: 1;
+}
+
+/*
+    Postion-
+        1. static
+        2. relative
+        3. absolute
+        4. fixed
+*/
+
+/*
+    relative
+Tu mazi(#bbb) position tharvat asashil , tar me ti postion mazya 
+current postion pasun decide karanar
+top:50px;    ---> mazya current postioon pasun 50px bottom chya dishene ja
+left: 50px;  ---> mazya curret postioon pasun 50px right chya dishene ja
+
+
+
+    #ppp{
+    border: 2px solid rgb(5, 141, 146);
+    width: 50%;
+}
+#aaa
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+#bbb{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left:50px;
+    
+}
+#ccc{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+}
+
+*/
+
+
+/*
+    absolute
+
+    Tu mazi(#bbb) position decide kar mazya parent cha position varun
+Jar maza parent la position nasel tar kai karu, then tyacha parent chi
+position bagh(in our case #ppp cha parent is <body> 
+
+#ppp{
+    border: 2px solid rgb(5, 141, 146);
+    width: 50%;
+    margin: 200px;
+}
+#aaa
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+#bbb{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left:50px;
+    
+}
+#ccc{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+}
+
+*/
+
+
+/*
+
+    fixed
+
+    Tu mal(#bbb) mahanshil tithe me place hoin
+    Website kitipan scrollable asali tar me(#bbb) tyacha jagi chitkun rahanar ahe
+
+    #ppp{
+    border: 2px solid rgb(5, 141, 146);
+    width: 50%;
+    margin: 200px;
+}
+#aaa
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+#bbb{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+    
+}
+#ccc{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+}
+
+
+*/
+
+
+
+
+/*
+
+Layers
+
+#ppp{
+    border: 2px solid rgb(5, 141, 146);
+    width: 50%;
+    margin: 200px;
+}
+#aaa
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    position: relative;
+}
+#bbb{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
+    position:relative;
+    top: 50px;
+    right:50px;
+    
+}
+#ccc{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+    position:relative;
+    top: 100px;
+    right:100px;
+}
+
+*/
+
+
+
+/*
+    z-index
+
+    #ppp{
+    border: 2px solid rgb(5, 141, 146);
+    width: 50%;
+    margin: 200px;
+}
+#aaa
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+#bbb{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
+    position:relative;
+    top: 50px;
+    right:50px;
+    z-index: 2;
+    
+}
+#ccc{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+    position:relative;
+    top: 100px;
+    right:100px;
+    z-index: 1;
+}
+
+
+*/

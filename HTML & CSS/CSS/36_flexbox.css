@@ -1,0 +1,276 @@
+.ppp{
+    background-color: rgb(249, 249, 4);
+    display:flex;
+    
+    
+   
+}
+
+.ccc{
+    background-color:rgb(245, 145, 13) ;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+#one
+{
+    order: 3;
+}
+
+#two
+{
+    order: 1;
+}
+
+#three
+{
+    order: 2;
+}
+
+#four
+{
+    order:4;
+}
+
+/*
+    [1]
+
+.ppp{
+    background-color: yellow;
+    display: flex;
+    /* flex-direction: row; 
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+}
+
+
+[2]
+
+.ppp{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; 
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+[3]
+.ppp{
+    background-color: yellow;
+    display: flex;
+
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end; 
+    justify-content: space-between;
+    justify-content: space-around; 
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+
+[4]
+rowwise alignment
+
+.ppp{
+    background-color: yellow;
+    display: flex;
+    height: 400px;
+   justify-content: space-between;
+   align-items: center;
+   align-items: flex-start;
+   align-items: flex-end;
+   
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+
+    text-align: center;
+    color: white;
+}
+
+
+[5]
+
+columiwise alignment
+
+.ppp{
+    background-color: yellow;
+    display: flex;
+  
+    flex-direction: column;;
+   
+    flex-wrap:wrap;
+    align-content: center;
+     align-content: space-between; 
+     align-content: space-around;
+    align-content: flex-start; 
+     align-content: flex-end; 
+   
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+
+    text-align: center;
+    color: white;
+}
+
+[6]
+.ppp{
+    background-color: yellow;
+    display: flex;
+    
+    height: 60vh;
+    
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+
+    text-align: center;
+    color: white;
+}
+
+
+[7]
+.ppp{
+    background-color: yellow;
+    display: flex;
+  
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+
+    text-align: center;
+    color: white;
+}
+
+#one
+{
+    order: 2;
+}
+#two
+{
+    order: 4;
+}
+#three{
+    order:1;
+}
+#four{
+    order:3;
+}
+
+Grow
+----
+#one
+{
+    flex-grow: 2;
+}
+#two
+{
+    flex-grow: 1;
+}
+#three{
+    flex-grow:1;
+}
+#four{
+    flex-grow:2;
+}
+
+
+shirnk
+--------
+#one
+{
+    flex-shrink: 2;
+}
+#two
+{
+    flex-shrink: 1;
+}
+#three{
+    flex-shrink:1;
+}
+#four{
+    flex-shrink:2;
+}
+
+
+self alignment
+-----------------
+.ppp{
+    background-color: yellow;
+    display: flex;
+   
+    height: 400px;
+    
+    
+}
+
+.ccc{
+    background-color: rgb(226, 131, 43);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+
+    text-align: center;
+    color: white;
+}
+
+#one
+{
+    align-self: flex-start;
+}
+#two
+{
+    align-self: center;
+}
+#three{
+    align-self: flex-end;
+} 
+
+
+*/

@@ -1,0 +1,21 @@
+#abc{
+
+    border: 2px solid black;
+    width: 500px;
+    height: 100px;
+    cursor: all-scroll ;
+}
+/*
+    cursor:wait;
+    cursor:crosshair;
+    cursor:zoom-out;
+    cursor:zoom-in;
+    cursor:progress;
+    cursor:not-allowed;
+    cursor:help;
+    cursor:grab;
+    cursor:e-resize;
+    cursor:cell;
+    cursor:all-scroll;
+    cursor: pointer;
+*/

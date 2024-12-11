@@ -1,0 +1,31 @@
+#ppp{
+    border: 2px solid rgb(5, 141, 146);
+    width: 50%;
+    margin: 200px;
+}
+#aaa
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    
+}
+#bbb{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
+    
+}
+#ccc{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+    overflow: auto;
+    float: right;
+    
+    
+    
+}

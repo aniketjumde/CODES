@@ -1,0 +1,12 @@
+#abc{
+    list-style-type: circle;
+}
+
+#pqr{
+    list-style-type: decimal-leading-zero;
+}
+
+li{
+    list-style-position: inside;
+    border: 2px solid red   ;
+}

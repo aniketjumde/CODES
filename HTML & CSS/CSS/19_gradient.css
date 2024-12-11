@@ -1,0 +1,15 @@
+#abc
+{
+    height: 100vh;
+    background-image: radial-gradient(hwb(30 4% 3%) ,hwb(0 100% 0%) ,rgb(15, 146, 28));
+}
+
+/*
+background-image: linear-gradient(hwb(30 4% 3%),white,rgb(15, 146, 28));
+background-image: linear-gradient(to right,hwb(30 4% 3%),white,rgb(15, 146, 28));
+background-image: linear-gradient(to left,hwb(30 4% 3%),white,rgb(15, 146, 28));
+background-image: linear-gradient(hwb(30 4% 3%) 33%,hwb(0 100% 0%) 33% ,rgb(15, 146, 28) 33%);
+
+background-image: radial-gradient(hwb(30 4% 3%) ,hwb(0 100% 0%) ,rgb(15, 146, 28));
+
+*/

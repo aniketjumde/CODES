@@ -1,0 +1,181 @@
+.ppp{
+    background-color: yellow;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+
+    /* prateka div separate kar*/
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    /* div adjacement --- vertical alignment*/
+    
+    height: 100vh;
+   
+    align-content: top;
+   
+}
+
+.ccc{
+    background-color: rgb(233, 52, 52);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center ;
+}
+
+#one{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#nine{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#two{
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+#three{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: 10px;
+}
+#four{
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#five{
+    margin: 10px;
+}
+/*
+[1]
+.ppp{
+    background-color: yellow;
+    padding: 20px;
+    display: inline-grid;
+}
+
+.ccc{
+    background-color: rgb(233, 52, 52);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center ;
+}
+
+[2]
+
+.ppp{
+    background-color: yellow;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 200px  300px 400px;
+    grid-template-columns: 20% 30% 40%;
+    grid-template-columns: 20% 30% auto;
+    grid-template-columns: auto auto auto;
+}
+
+.ccc{
+    background-color: rgb(233, 52, 52);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center ;
+}
+
+[3]
+
+.ppp{
+    background-color: yellow;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 200px auto;
+}
+
+.ccc{
+    background-color: rgb(233, 52, 52);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center ;
+}
+
+[4]
+.ppp{
+    background-color: yellow;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 200px auto;
+
+    prateka div separate kar
+
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+
+    div adjacement --- Horizontal alignment
+
+    justify-content: start;
+    justify-content: center;
+    justify-content: end;
+}
+
+.ccc{
+    background-color: rgb(233, 52, 52);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center ;
+}
+
+
+
+
+[5]
+
+.ppp{
+    background-color: yellow;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+
+    prateka div separate kar
+
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+     div adjacement --- vertical alignment
+    
+    height: 600px;
+    align-content: start;
+    align-content: center;
+    align-content: end;
+    align-content: space-between;
+}
+
+.ccc{
+    background-color: rgb(233, 52, 52);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center ;
+}
+
+
+
+
+
+
+
+
+
+
+
+*/

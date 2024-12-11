@@ -1,0 +1,36 @@
+#head{
+    background-color: yellow;
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+}
+#menu{
+    background-color: aqua;
+}
+.abc{
+    
+    background-color: rgb(3, 3, 75);
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    padding-top : 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+a{
+    color: white;
+   
+}
+/*
+a:hover
+{
+    background-color: yellow;
+}
+*/
+.abc:hover
+{
+    background-color: rgb(8, 184, 17);
+}
+

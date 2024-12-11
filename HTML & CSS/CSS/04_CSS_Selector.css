@@ -1,0 +1,32 @@
+h1{
+    color: red;
+    font-size:20px;
+}   
+
+#abc{
+    color:blue;
+    font-size: 25px;
+}
+
+.lmn{
+    color: aqua;
+    font-size:25px;
+}
+
+.abc
+{
+    background-color: yellow;
+    font-style: italic;
+  
+}
+
+/*
+
+CSS Selector
+------------
+1. Element Selector
+2. ID Selector
+3. class selector
+
+
+*/

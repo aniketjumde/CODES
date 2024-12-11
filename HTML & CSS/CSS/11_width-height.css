@@ -1,0 +1,14 @@
+#red{
+    border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
+}
+
+#blue{
+    border: 2px solid blue;
+    width:70%;
+    height: 50%;
+
+    min-width: 500px;
+    min-height: 500px ;
+}

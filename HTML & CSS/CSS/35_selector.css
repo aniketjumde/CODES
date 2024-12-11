@@ -1,0 +1,78 @@
+div+a{
+    color :red;
+    
+
+}
+
+
+
+
+/*
+
+Types of Selector
+
+#abc{ 
+    color: red;
+}
+
+.pqr{
+    color: red;
+}
+
+a{
+    color:red;
+}
+
+a,h1{
+    color:red;
+}
+
+a[href="https://technocompacademy.com/"] {
+    color:red;
+}
+
+input[tyep="text"]{
+    background-color: red;
+}
+
+a:hover{
+    color:red;
+}
+
+p::first-line{
+    color:red;
+}
+
+ Universal Selector
+
+*{
+    color:red;
+}
+
+div a{
+    color :red;
+}
+
+
+div che khare direct child red kar
+
+div>a{
+    color :red;
+}
+
+
+div cha sibling paiki <a> la red kar
+
+div~a{
+    color :red;
+}
+
+
+div nantar je je <a> tag immediatly yetat tyanch red kar
+
+div+a{
+    color :red;
+}
+
+
+*/

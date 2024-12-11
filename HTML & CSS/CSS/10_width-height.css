@@ -1,0 +1,17 @@
+#red{
+    border: 5px solid red;
+    width: 500vw;
+    height: 500vh;
+}
+
+/*
+
+width: 50%;
+height: 50%;
+
+width: 500px;
+height: 500px;
+
+width: 500vw;   vw: viewer width
+height: 500vh;  vh: viewer height
+*/

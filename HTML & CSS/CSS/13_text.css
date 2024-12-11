@@ -1,0 +1,33 @@
+p{
+    color: red;
+    text-align: justify;
+    text-transform:inherit;
+}
+
+/*
+ color:red;
+ text-align: justify;
+ text-align: left;
+ text-align: right;
+ text-align: centre;
+
+ text-decoration:overline;
+ text-decoration:underline;
+ text-decoration:line-through;
+ text-decoration:none;
+
+ text-decoration-color:red;
+ text-decoration-style: double;
+
+ text-shadow: -5px -5px 8px #333;
+
+ line-height: 35px;                it gives space betwwen line
+ letter-spacing: 5px;
+ word-spacing: -10px;
+
+ text-transform:initial; 
+ text-transform: capitalize;
+ text-transform: lowercase;
+  text-transform:uppercase;
+
+*/

@@ -1,0 +1,66 @@
+#abc
+{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition-property: background-color, width,height;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+#abc:hover
+{
+   background-color: aqua;
+   width: 400px;
+   height: 600px;
+}
+
+/*
+
+#abc
+{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition-property: width;
+    transition-duration: 5s;
+}
+#abc:hover
+{
+    width: 400px;
+}
+----------------------------------------------
+
+#abc
+{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+#abc:hover
+{
+   background-color: aqua;
+}
+--------------------------------------------------------
+
+#abc
+{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition-property: background-color, width,height;
+    transition-duration: 5s;
+}
+#abc:hover
+{
+   background-color: aqua;
+   width: 400px;
+   height: 600px;
+}
+
+
+
+
+*/

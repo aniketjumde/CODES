@@ -1,0 +1,21 @@
+p{
+    font-size: 20px;
+    color: blue;
+}
+
+@media print{
+    p{
+        font-size: 40px;
+        font-style: italic;
+        text-align: justify;
+        color: black;
+    }
+
+    div{
+        width: 70%;
+    }
+
+    h1{
+        display: none;
+    }
+}

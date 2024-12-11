@@ -1,0 +1,45 @@
+input:focus{
+    border:3px solid red;
+}
+
+input:hover{
+    background-color: aqua;
+}
+
+li:first-child
+{
+    color:aqua ;
+}
+
+li:last-child
+{
+    color: brown;
+}   
+
+li:nth-child(3)
+{
+    color: blue;
+}
+
+li:nth-last-child(2)
+{
+    color: rgb(204, 255, 0);
+    
+}
+
+p::first-letter{
+    font-size: 50px;
+    color: red;
+
+}
+
+p::first-line{
+    font-size: 20px;
+    color: red;
+    
+}
+
+::selection{
+    background-color: aqua;
+    color: red;
+}

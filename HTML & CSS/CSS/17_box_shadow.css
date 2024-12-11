@@ -1,0 +1,32 @@
+body{
+    background-image: url(nature.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div{
+    width: 500px;
+    height: 350px;
+    background-color: hsla(107, 75%, 41%, 0.863);
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(255, 0, 14,);
+    margin-top: 200px;
+    opacity: 0.8;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+p{
+    text-align: justify;
+    padding: 5px;
+}
+
+/*
+box-shadow:H V blur color
+
+
+*/

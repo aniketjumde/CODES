@@ -1,0 +1,13 @@
+:root
+{
+    --bg-color:red;
+    --fg-color:white;
+
+    
+}
+
+div{
+    height: 300px;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}

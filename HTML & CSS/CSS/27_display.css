@@ -1,0 +1,39 @@
+#abc{
+    background-color: red;
+    display: inline;
+}
+#pqr{
+    background-color: aqua;
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+}
+
+/*
+
+display: block;
+display: inline;
+display: inline-block;
+display: none;
+
+There are two types of elements -
+    1. block Element
+    2. inline Element
+
+Block Element menas Jar he webpage var ale tar purn width capture karatat
+e.g  H1, li
+Width, height can be applicable
+
+
+Inline Element means Jevedha maza content tevadhich me height ani width capture karanar
+e.g. span, <a>
+No widht and height is applicable
+
+
+inline-block
+------------------
+means combined behaviours of 'block' and 'inline' 
+that is,
+    you can apply widht and height bcz of block.
+    Next element will start at same line bcz of inline
+*/

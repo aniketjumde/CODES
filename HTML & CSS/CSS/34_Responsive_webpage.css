@@ -1,0 +1,33 @@
+#abc{
+    width: 70%;
+    background-color: red;
+    float: left;
+   
+}
+
+#pqr{
+    width: 30%;
+    background-color: blue;
+    float: left;
+    
+}
+
+@media screen and (min-width:500px) and (max-width:768px) 
+{
+    #abc{
+        width: 50%;
+    }
+    #pqr{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    #abc{
+        width: 100%;
+    }
+    #pqr{
+        width: 100%;
+    }
+}

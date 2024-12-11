@@ -1,0 +1,16 @@
+#abc{
+    background-color: aqua;
+    width: 800px;
+    height: 300px;
+}
+
+#pqr{
+    background-color: rgb(62, 28, 230);
+    width: 800px;
+    height: 300px;
+
+    padding: 20px;
+    border: 10px solid red;
+    box-sizing: border-box;
+
+}
