@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    select, button {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #calendar {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      justify-content: center;
+    }
+
+    .day {
+      padding: 20px;
+      border: 3px solid #282626;
+      cursor: pointer;
+    }
+
+    .day:hover {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Calendar Generator</h1>
+  <label for="month">Month:</label>
+  <select id="month">
+    <option value="0">January</option>
+    <option value="1">February</option>
+    <option value="2">March</option>
+    <option value="3">April</option>
+    <option value="4">May</option>
+    <option value="5">June</option>
+    <option value="6">July</option>
+    <option value="7">August</option>
+    <option value="8">September</option>
+    <option value="9">October</option>
+    <option value="10">November</option>
+    <option value="11">December</option>
+  </select>
+
+  <label for="year">Year:</label>
+  <select id="year">
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+  </select>
+
+  <button onclick="generateCalendar()">Generate Calendar</button>
+
+  <button onclick="changeBackgroundColor()">Change Background Color</button>
+
+  <div id="calendar"></div>
+
+  <script>
+    function generateCalendar() {
+      const month = document.getElementById("month").value;
+      const year = document.getElementById("year").value;
+      const calendarDiv = document.getElementById("calendar");
+
+      // Clear previous calendar
+      calendarDiv.innerHTML = "";
+
+      const firstDay = new Date(year, month, 1);
+      const daysInMonth = new Date(year, parseInt(month) + 1, 0).getDate();
+      const startingDay = firstDay.getDay();
+
+      // Add empty spaces before the first day
+      for (let i = 0; i < startingDay; i++) {
+        const emptyDiv = document.createElement("div");
+        calendarDiv.appendChild(emptyDiv);
+      }
+
+      // Add days of the month
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayDiv = document.createElement("div");
+        dayDiv.classList.add("day");
+        dayDiv.textContent = day;
+        dayDiv.onclick = function() {
+          alert(`You clicked on day ${day}`);
+        };
+        calendarDiv.appendChild(dayDiv);
+      }
+    }
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Generate default calendar when the page loads
+    window.onload = function() {
+      generateCalendar();
+    };
+  </script>
+</body>
+</html>
