@@ -78,33 +78,33 @@ public class EmployeClass
 
  		System.out.println();
 
- 		Employee s[]=new Employee[n];
+ 		Employee E[]=new Employee[n];
 
- 		for(int i=0;i<s.length;i++)
+ 		for(int i=0;i<E.length;i++)
  		{
- 			s[i]=new Employee();
+ 			E[i]=new Employee();
 
  			System.out.print("Enter the Id of Employee     : ");
- 			s[i].setId(Integer.parseInt(br.readLine()));
+ 			E[i].setId(Integer.parseInt(br.readLine()));
 
  			System.out.print("Enter the Name of Employee   : ");
- 			s[i].setEname(br.readLine());
+ 			E[i].setEname(br.readLine());
 
  			System.out.print("Enter the Salary of Employee : ");
- 			s[i].setSalary(Double.parseDouble(br.readLine()));
+ 			E[i].setSalary(Double.parseDouble(br.readLine()));
 
  			System.out.print("Enter the City of Employee   : ");
- 			s[i].setCity(br.readLine());
+ 			E[i].setCity(br.readLine());
 
  			System.out.println();
 
  		}
 
  		System.out.println("ID\tENAME\tSALARY\tCITY");
- 		for(int i=0;i<s.length;i++)
+ 		for(int i=0;i<E.length;i++)
  		{
  			
- 			s[i].display();
+ 			E[i].display();
  		}
 
 
